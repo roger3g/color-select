@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div id="container">
+
+    <section id="range-area">
+      <div id="output-colors"></div>
+
+      <div id="ranges">
+        <span class="span-input"> 
+          <span class="rbg-latters">R</span> 0 <input type="range" min="0" max="255" step="1" id="r-range"> 255 
+        </span>
+        <span class="span-input"> 
+          <span class="rbg-latters">G</span> 0 <input type="range" min="0" max="255" step="1" id="g-range"> 255 
+        </span>
+        <span class="span-input"> 
+          <span class="rbg-latters">B</span> 0 <input type="range" min="0" max="255" step="1" id="b-range"> 255 
+        </span>
+      </div>
+    </section>
+
+    <section id="inputs-rgb">
+      <div id="inputs">
+        <span class="span-input-rgb"> 
+          <span>R</span> <input type="text" id="r-input" size="3" min="0" max="255" pattern="[0-9]"> 
+        </span>
+        <span class="span-input-rgb"> 
+          <span>G</span> <input type="text" id="g-input" size="3" min="0" max="255" pattern="[0-9]">
+        </span>
+        <span class="span-input-rgb"> 
+          <span>B</span> <input type="text" id="b-input" size="3" min="0" max="255" pattern="[0-9]">
+        </span>
+
+      </div>
+
+      <div id="copy"> rgb(r,g,b) </div>
+    </section>
+
+    <button>Ver cor</button>
+
+  </div>
+  
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+:root {
+  --color-primary: #fd951f;
+  --color-background: #130f0d;
+  --color-text: #f0f0f5;
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 500 1.6rem Poppins;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+
+#container {
+  width: 60rem;
+  height: 35rem;
+  border: 0.2rem solid var(--color-primary);
+
+  margin: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#container #range-area {
+  width: 100%;
+  height: 20rem;
+  padding: 1rem;
+  /*border: 0.2rem solid var(--color-primary);*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container #range-area #output-colors {
+  width: 30rem;
+  height: 15rem;
+  border: 0.2rem solid var(--color-primary);
+}
+
+#container #range-area #ranges {
+  width: 30rem;
+  height: 15rem;
+  /*border: 0.2rem solid var(--color-primary);*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#container #range-area #ranges input {
+  margin: 1rem;
+}
+
+#container #range-area #ranges .span-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rbg-latters {
+  margin-right: 1rem;
+}
+
+#container #inputs-rgb {
+  width: 100%;
+  height: 10rem;
+  /*border: 0.2rem solid var(--color-primary);*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container #inputs-rgb #inputs {
+  width: 50%;
+  height: 10rem;
+  /*border: 0.2rem solid var(--color-primary);*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container #inputs-rgb #inputs .span-input-rgb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#container #inputs-rgb #inputs input {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  outline: none;
+  border: 0.1rem solid var(--color-primary);
+  padding: 0.5rem;
+}
+
+#container #inputs-rgb #copy {
+  width: 50%;
+  height: 10rem;
+  /*border: 0.2rem solid var(--color-primary);*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 1rem;
+  cursor: pointer;
+  width: 15rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  outline: none;
+  border: 0.2rem solid var(--color-primary);
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  transition: background-color.2s, border-color .2s;
+}
+
+button:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-background);
+}
